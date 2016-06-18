@@ -1,0 +1,11 @@
+<div class="guess-title">Spell the missing word:</div>
+
+<div id="guess-component">
+  <span class="guess-char"
+    [class.hide]="!g.display"
+    [class.hint]="g.isHint"
+    *ngFor="let g of guess"
+    (click)="handleGuessClick(g)">
+    {{g.char}}
+  </span>
+</div>

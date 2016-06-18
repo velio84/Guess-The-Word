@@ -1,0 +1,35 @@
+.dynamic-body {
+  background-color: #151c50;
+  border-top: 2px solid #5d69ba;
+}
+
+#action-buttons {
+  text-align: right;
+  padding-right: 5%;
+  padding-bottom: 20px;
+}
+
+#action-buttons input {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#action-buttons input:hover,
+#action-buttons input[disabled] {
+  color: #33ca90;
+  border-color: #33ca90;
+}
+
+#action-buttons input[disabled] {
+  cursor: not-allowed;
+}
+
+#system-msg {
+  color: #fff;
+}

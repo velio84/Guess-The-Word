@@ -1,0 +1,35 @@
+.guess-title {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  padding: 20px 0 10px 0;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  font-size: large;
+  color: #fff;
+}
+
+#guess-component {
+  font-family: Sans-serif;
+}
+
+.guess-char {
+  font-size: 28px;
+  color: #fff;
+}
+
+.guess-char:before {
+  font-size: 32px;
+  margin-left: 1px;
+  content: '_';
+  position: absolute;
+  color: #33ca90;
+}
+
+.hide {
+  color: transparent;
+}
+
+.hint {
+  color: #33ca90;
+}

@@ -1,0 +1,7 @@
+<div id="letters">
+  <input type="button"
+    *ngFor="let l of word"
+    (click)="handleLetterClick(l)"
+    value="{{l.char}}"
+    [disabled]="l.isUsed" />
+</div>

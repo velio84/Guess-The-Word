@@ -1,0 +1,33 @@
+<div class="">
+    <p id="text" (click)="handleSelectWord($event)">
+        <span>Mr. </span><span>and </span><span>Mrs. </span><span>Dursley, </span><span>of </span><span>number </span><span>four, </span><span>Privet </span><span>Drive, </span><span>were </span><span>proud </span><span>to  </span><span>say </span><span>that </span><span>they </span><span>were </span><span>perefectly </span><span>normal, </span><span>thank </span><span>you </span><span>very </span><span>much.</span>
+    </p>
+</div>
+
+<br>
+
+<div class="dynamic-body">
+  <guess [selectedWord]="selectedWord"
+    [word]="randomizedWord"
+    [guess]="guessWord"
+    [wordService]="wordService"
+    [localStorageService]="localStorageService">
+  </guess>
+
+  <br>
+
+  <word [selectedWord]="selectedWord"
+    [word]="randomizedWord"
+    [guess]="guessWord"
+    [wordService]="wordService"
+    [localStorageService]="localStorageService">
+  </word>
+
+  <br>
+
+  <div *ngIf="guessWord.length > 0" id="action-buttons">
+    <span id="system-msg">{{sysMessage}}</span>
+    <input id="hint-button" type="button" name="name" value="Hint" (click)="handleHintBtn()">
+    <input type="button" name="name" value="Check" (click)="handleCheckBtn()">
+  </div>
+</div>

@@ -1,0 +1,31 @@
+#letters {
+  width: 90%;
+  margin-left: 5%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+}
+
+input {
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 15px;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+}
+
+input[disabled],
+input:hover {
+  cursor: pointer;
+  color: #151c50;
+  background-color: #33ca90;
+  border-color: #33ca90;
+}
+
+input[disabled] {
+  cursor: not-allowed;
+}
